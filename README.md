@@ -40,7 +40,7 @@ The backend service receives transaction webhooks from external payment provider
 - FastAPI
 - PostgreSQL
 - SQLAlchemy
-- Railway (deployment)
+- Render (deployment)
 
 ---
 
