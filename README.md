@@ -1,4 +1,4 @@
-# Full Stack Assessment
+# Full Stack Engineer Assessment
 
 This repository contains a **full-stack application** built as part of the Full Stack Engineer assessment.
 
@@ -153,7 +153,7 @@ The frontend displays call analytics charts and allows users to:
   ```
   dist
   ```
-- Public URL: https://<your-frontend-url>
+- Public URL: https://full-stack-front.netlify.app/
 
 ---
 
@@ -194,9 +194,8 @@ npm run dev
 
 This project demonstrates:
 
-- Production-style webhook handling
+- Webhook handling
 - Asynchronous background processing
 - Idempotent system design
 - Persistent data storage
 - Frontend analytics with user-controlled state
-- End-to-end full stack ownership
