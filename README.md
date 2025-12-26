@@ -1,4 +1,4 @@
-# Full Stack Engineer Assessment
+# Full Stack Assessment
 
 This repository contains a **full-stack application** built as part of the Full Stack Engineer assessment.
 
