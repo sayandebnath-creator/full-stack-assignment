@@ -103,9 +103,9 @@ Response:
 
 ### Backend Deployment
 
-- Platform: **Railway**
+- Platform: **Render**
 - Base directory: `/backend`
-- Public URL: https://<your-backend-url>
+- Public URL: https://full-stack-assignment-g7mk.onrender.com/
 
 ---
 
