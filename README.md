@@ -14,8 +14,8 @@ Both components are deployed independently and are publicly accessible.
 ## Architecture Overview
 
 ```
-├── backend/    # FastAPI webhook service (Railway)
-├── frontend/   # React + TypeScript analytics UI (Netlify)
+├── backend/    # FastAPI webhook service
+├── frontend/   # React + TypeScript
 └── README.md
 ```
 
