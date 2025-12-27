@@ -15,6 +15,7 @@ export default function App() {
   const [areaData, setAreaData] = useState(initialAreaData);
   const [email, setEmail] = useState("");
   const [newValue, setNewValue] = useState<number | "">("");
+  const [selectedTime, setSelectedTime] = useState("02:00");
 
   async function updateChart() {
     if (!email) {
@@ -30,7 +31,7 @@ export default function App() {
 
     if (existing) {
       const ok = confirm(
-        `Previous value for 02:00 was ${existing.value}. Overwrite it?`
+        `Previous value for ${selectedTime} was ${existing.value}. Overwrite it?`
       );
       if (!ok) return;
     }
@@ -42,7 +43,7 @@ export default function App() {
 
     setAreaData(prev =>
       prev.map(item =>
-        item.time === "02:00"
+        item.time === selectedTime
           ? { ...item, value: Number(newValue) }
           : item
       )
@@ -66,9 +67,21 @@ export default function App() {
             style={{ marginRight: 8 }}
           />
 
+          <select
+            value={selectedTime}
+            onChange={e => setSelectedTime(e.target.value)}
+            style={{ marginRight: 8 }}
+          >
+            {areaData.map(item => (
+              <option key={item.time} value={item.time}>
+                {item.time}
+              </option>
+            ))}
+          </select>
+
           <input
             type="number"
-            placeholder="Value for 02:00"
+            placeholder="New value"
             value={newValue}
             onChange={e => setNewValue(e.target.valueAsNumber)}
             style={{ marginRight: 8 }}
